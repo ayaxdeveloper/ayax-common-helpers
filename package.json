@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maphskiy/ayax-common-helpers.git"
+    "url": "git+https://github.com/ayaxdeveloper/ayax-common-helpers.git"
   },
   "author": "maphskiy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maphskiy/ayax-common-helpers/issues"
+    "url": "https://github.com/ayaxdeveloper/ayax-common-helpers/issues"
   },
-  "homepage": "https://github.com/maphskiy/ayax-common-helpers#readme",
+  "homepage": "https://github.com/ayaxdeveloper/ayax-common-helpers#readme",
   "dependencies": {
     "moment": "^2.20.1"
   },
