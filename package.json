@@ -1,6 +1,6 @@
 {
   "name": "ayax-common-helpers",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Ayax Common Helpers for Typescript projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maphskiy/ayax-common-helpers.git"
+    "url": "git+https://github.com/ayaxdeveloper/ayax-common-helpers.git"
   },
-  "author": "maphskiy",
+  "author": "ayaxdeveloper",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maphskiy/ayax-common-helpers/issues"
+    "url": "https://github.com/ayaxdeveloper/ayax-common-helpers/issues"
   },
-  "homepage": "https://github.com/maphskiy/ayax-common-helpers#readme",
+  "homepage": "https://github.com/ayaxdeveloper/ayax-common-helpers#readme",
   "dependencies": {
     "moment": "^2.20.1"
   },
