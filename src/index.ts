@@ -1,2 +1,2 @@
-export * from './helpers/date/date-helper';
-export * from './helpers/array-sort/array-sort-helper';
+export * from './helpers/DateHelper';
+export * from './helpers/ArraySortHelper';
