@@ -1,5 +1,5 @@
-export const ArraySortHelper = {
-    byOrder(a: any, b: any) {
+export class ArraySortHelper {
+    static byOrder(a: any, b: any) {
         if(!a.order || !b.order) {
             return 0;
         }
@@ -10,8 +10,8 @@ export const ArraySortHelper = {
             return -1;
         }
         return 0;
-    },
-    byOrderDesc(a: any, b: any) {
+    }
+    static byOrderDesc(a: any, b: any) {
         if(!a.order || !b.order) {
             return 0;
         }
@@ -22,5 +22,5 @@ export const ArraySortHelper = {
             return -1;
         }
         return 0;
-    },
+    }
 }
