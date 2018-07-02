@@ -1,7 +1,7 @@
-import * as moment from 'moment';
+import * as moment from "moment";
 export class DateHelper {
     public static formatDate (date: any, format?: string) {
-        if(!format) {
+        if (!format) {
             format = "DD.MM.YYYY";
         }
         if (!date || !moment(date).isValid) {
@@ -11,7 +11,7 @@ export class DateHelper {
     }
 
     public static parseDate (date: any, format?: string) {
-        if(!format) {
+        if (!format) {
             format = "DD.MM.YYYY";
         }
         if (!date || !moment(date, format).isValid) {
@@ -21,7 +21,7 @@ export class DateHelper {
     }
 
     public static ToString(date: Date, format?: string): string {
-        if(!format) {
+        if (!format) {
             format = "DD.MM.YYYY";
         }
         if (!date || !moment(date).isValid) {

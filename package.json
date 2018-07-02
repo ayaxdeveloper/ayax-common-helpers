@@ -1,6 +1,6 @@
 {
   "name": "ayax-common-helpers",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Ayax Common Helpers for Typescript projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

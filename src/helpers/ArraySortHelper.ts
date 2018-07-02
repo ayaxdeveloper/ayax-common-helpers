@@ -1,6 +1,6 @@
 export class ArraySortHelper {
     static byOrder(a: any, b: any) {
-        if(!a.order || !b.order) {
+        if (!a.order || !b.order) {
             return 0;
         }
         if (a.order > b.order) {
@@ -12,7 +12,7 @@ export class ArraySortHelper {
         return 0;
     }
     static byOrderDesc(a: any, b: any) {
-        if(!a.order || !b.order) {
+        if (!a.order || !b.order) {
             return 0;
         }
         if (a.order < b.order) {
