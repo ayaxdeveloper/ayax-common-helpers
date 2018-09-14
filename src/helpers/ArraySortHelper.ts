@@ -8,24 +8,24 @@ export class ArraySortHelper {
         }
     }
 
-    static SortBy(key: string | string[]) {
+    static sortBy(key: string | string[]) {
         return new ArraySortHelper(key);
     }
 
-    public Asc(a: any, b: any) : number {
+    asc = (a: any, b: any) : number => {
         return this.Sort(a, b, true);
     }
 
-    public Desc(a: any, b: any) : number {
+    desc = (a: any, b: any) : number => {
         return this.Sort(a, b, false);
     }
 
     static byOrder(a: any, b: any) {
-        return this.SortBy("order").Asc(a, b);
+        return this.sortBy("order").asc(a, b);
     }
     
     static byOrderDesc(a: any, b: any) {
-        return this.SortBy("order").Desc(a, b);
+        return this.sortBy("order").desc(a, b);
     }
 
     private FormatValue(val: any): any {
@@ -43,7 +43,6 @@ export class ArraySortHelper {
 
         const aFormatted = this.FormatValue(a[key]);
         const bFormatted = this.FormatValue(b[key]);
-
         if (asc) {
             if (aFormatted > bFormatted) {
                 return 1;
@@ -63,12 +62,16 @@ export class ArraySortHelper {
     }
 
     private Sort(a: any, b: any, asc?: boolean) : number {
-        this._key.forEach(key => {
-            const sort = this.SortByKey(a, b, key, asc);
-            if (sort !== 0) {
-                return sort;
+        let sort = 0;
+        this._key.some(key => {
+            const currentSort = this.SortByKey(a, b, key, asc);
+            if (currentSort !== 0) {
+                sort = currentSort;
+                return true;
+            } else {
+                return false;
             }
         });
-        return 0;
+        return sort;
     }
 }
